@@ -29,4 +29,4 @@ EXPOSE 8080
 RUN python -c "import numpy; print('Numpy version:', numpy.__version__)"
 
 # サーバーを起動
-CMD ["uvicorn", "text2text.answer.api.main:app", "--host", "0.0.0.0", "--port", "8080"]
+CMD ["uvicorn", "text2text.api.main:app", "--host", "0.0.0.0", "--port", "8080"]
